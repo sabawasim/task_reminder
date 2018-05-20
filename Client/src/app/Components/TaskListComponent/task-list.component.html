@@ -1,0 +1,16 @@
+<ul style="font-family: montserrat">
+
+  <li *ngFor="let t of tasklist" style="list-style-type:none; border:2px solid blue; margin:4px;">
+
+    <span>Id : {{t.id}}</span> &nbsp; 
+    <span style="font-weight:bold; color:red;">Name: <person-name [personId]="t.person"></person-name> </span> 
+    <span>&nbsp;&nbsp; Tasks = {{t.title}} </span>
+    
+    
+    <br />
+ 
+     <br />
+     
+
+  </li>
+</ul>

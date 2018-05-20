@@ -1,0 +1,19 @@
+<hr />
+
+
+<br />
+<div style="font-family:montserrat; padding-left:10%;">
+  
+  <h2>User Details :</h2>
+  <label> Select User = </label>
+
+<person-selector (personSelectedEmit)="handleUserUpdated($event)"></person-selector>
+
+  <!--Displaying Search Results-->
+  <div *ngIf="task_exists">
+      
+      <task-list [tasklist]="tasks"></task-list>
+
+  </div>
+
+</div>
